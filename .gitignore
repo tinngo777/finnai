@@ -1,0 +1,13 @@
+# Python
+*.pyc
+__pycache__/
+
+# Virtual environment
+venv/
+.env/
+
+# Firebase credentials
+firebase-adminsdk.json
+
+# Streamlit cache
+.streamlit/
