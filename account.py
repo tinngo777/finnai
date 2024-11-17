@@ -118,8 +118,17 @@ def signup_form():
         st.session_state["current_page"] = "login"
 
 # Main Display Logic
+# Main Display Logic
 def run_account():
+    # Dynamically render content based on current page
+    if "current_page" not in st.session_state:
+        st.session_state["current_page"] = "login"  # Default to login
+
     if st.session_state["current_page"] == "login":
         login_form()
     elif st.session_state["current_page"] == "signup":
         signup_form()
+    elif st.session_state["current_page"] == "questionnaire":
+        st.success("Redirecting to profile setup...")
+    elif st.session_state["current_page"] == "main_page":
+        st.success("Redirecting to the dashboard...")
