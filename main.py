@@ -19,7 +19,7 @@ if st.session_state["current_page"] == "login":
 elif st.session_state["current_page"] == "questionnaire":
     questionnaire(st.session_state["user_id"])
 elif st.session_state["current_page"] == "main_page":
-    run_main_page()
+    run_main_page(st.session_state["user_id"])
 elif st.session_state["current_page"] == "expense_tracking":
     expense_tracking(st.session_state["user_id"])
 elif st.session_state["current_page"] == "budget_tracker":
