@@ -7,7 +7,7 @@ venv/
 .env/
 
 # Firebase credentials
-firebase-adminsdk.json
+serviceAccountKey.json
 
 # Streamlit cache
 .streamlit/
