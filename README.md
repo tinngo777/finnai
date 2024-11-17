@@ -1,4 +1,4 @@
-# utd-hackathon-app
+# FinnAi
 A Personal Finance Advisor for Users
 
 python3 -m venv streamlit-env
